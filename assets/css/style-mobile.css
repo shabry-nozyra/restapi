@@ -1,0 +1,43 @@
+html,
+body,
+.container#masuk {
+	height: 100%;
+}
+
+.menu-bar {
+	border-top: 1px solid red;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: max-content;
+	padding: 8px;
+	margin-top: 8px;
+	z-index: 2;
+	background-color: white;
+}
+
+.persen {
+	margin-top: -35px;
+	font-size: 21px;
+}
+
+.infoangka {
+	border-top: 2px solid white;
+	color: white;
+	font-weight: bold;
+}
+
+.kotak {
+	background-color: rgba(241, 101, 101, 0.426);
+	border-radius: 10px;
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	color: red;
+}

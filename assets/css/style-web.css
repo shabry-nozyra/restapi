@@ -1,0 +1,187 @@
+a {
+	color: #57b500;
+}
+
+html,
+body {
+	font-family: 'Lato', sans-serif !important;
+}
+
+i {
+	font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Roboto', sans-serif !important;
+}
+
+.roboto {
+	font-family: 'Roboto', sans-serif !important;
+}
+
+.namapaslon {
+	font-size: 21px;
+}
+
+@media (max-width: 575.98px) {
+	.namapaslon {
+		font-size: 8px;
+	}
+
+	.persen {
+		font-family: 'Copse', serif !important;
+		color: #a29f9f;
+		margin-top: -25px;
+		font-size: 30px;
+	}
+
+	.persen span {
+		font-size: 20px;
+	}
+}
+
+.no_urut {
+	margin: auto;
+	height: 40px;
+	width: 40px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 50%;
+	font-size: 25px;
+	z-index: 30;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	border: 2px solid gray;
+	font-family: 'Copse', serif !important;
+	color: #a29f9f;
+
+}
+
+.gambar-paslon {
+	margin-top: 8px;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #478b06;
+}
+
+.keterangan {
+	display: none;
+	border-top: 2px solid lightgray;
+	height: 38px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: whitesmoke;
+}
+
+@media (min-width: 768px) {
+	.keterangan {
+		display: block;
+		border-top: 2px solid lightgray;
+		height: 38px;
+		width: 100%;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		background-color: whitesmoke;
+	}
+}
+
+
+.nav-item .nav-link {
+	font-weight: bold;
+}
+
+.nav-item .nav-link {
+	color: rgba(248, 248, 248, 0.875) !important;
+}
+
+.nav-item .nav-link:hover {
+	color: white !important;
+}
+
+.nav-item.active .nav-link {
+	color: yellow !important;
+	border-bottom: 3px solid yellow;
+
+}
+
+.jam {
+	bottom: 20px;
+	height: max-content;
+	color: #dc3545;
+	border: 2px solid #dc3545;
+	border-radius: 10px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+@media (min-width: 768px) {
+	.persen {
+		font-family: 'Copse', serif !important;
+		color: #a29f9f;
+		margin-top: -25px;
+		font-size: 60px;
+
+	}
+
+	.persen span {
+		font-size: 40px;
+
+	}
+}
+
+.infoangka {
+	border-top: 2px solid white;
+	color: white;
+	font-weight: bold;
+}
+
+table {
+	font-size: 10px;
+}
+
+.table td,
+.table th {
+	padding: .35rem;
+}
+
+.juduljudul {
+	border-bottom: 2px solid red;
+	width: max-content;
+	padding-bottom: 8px;
+}
+
+footer.sticky-footer {
+	padding: 2rem 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+}
+
+footer.sticky-footer .copyright {
+	line-height: 1;
+	font-size: 0.8rem;
+	font-family: "Poppins", sans-serif;
+}
+
+footer {
+	position: sticky;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+}

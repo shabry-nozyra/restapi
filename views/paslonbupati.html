@@ -1,0 +1,269 @@
+{{define "paslonbupati"}}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Poppins&display=swap" rel="stylesheet">
+    <title>Admin</title>
+
+    <!-- Style -->
+    <link href="/static/site.css" rel="stylesheet">
+
+
+
+</head>
+
+<body class="" onload="checkNav()">
+    <div id="wrapper">
+		<!-- sidebar -->
+<ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #2b3a4a">
+    <div class="sidebar-fixed">
+
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
+            <div class="sidebar-brand-icon rotate-n-15">
+                <img src="/static/nozyra-menu.png" height="40px">
+            </div>
+            <div class="sidebar-brand-text mx-3">PT. NOZYRA <br><small>Global Solusindo</small></div>
+        </a>
+        <hr class="sidebar-divider mt-0 mb-4 ">
+
+        <style>
+            .div-sidebar-menu {
+                direction: inherit;
+                -webkit-box-sizing: border-box !important;
+                box-sizing: border-box !important;
+                position: relative;
+                display: block;
+                height: 560px;
+                width: auto;
+                visibility: visible;
+                overflow: auto;
+                max-width: 100%;
+                min-height: 100%;
+                scrollbar-width: none;
+                padding: 0 !important;
+                overflow: hidden;
+            }
+        </style>
+
+        <div class="div-sidebar-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="" style="color: red !important;">
+                    <i class="fa fa-fw fa-home"></i>
+                    <span>Beranda</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/paslonbupati">
+                    <i class="fa fa-fw fa-address-card"></i>
+                    <span>Pasangan Bupati</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/tps">
+                    <i class="fa fa-fw fa-building"></i>
+                    <span>TPS</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="">
+                    <i class="fa fa-fw fa-address-card"></i>
+                    <span>Petugas TPS</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="">
+                    <i class="fa fa-fw fa-file"></i>
+                    <span>Laporan</span></a>
+            </li>
+
+        </div>
+
+    </div>
+</ul>
+<!-- End of Sidebar -->
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+    <div id="content">
+        <!-- Header -->
+        <nav class="navbar navbar-expand navbar-light topbar static-top" style="background-color: #de5246; border-bottom: 1px solid #e7e7e7;">
+            <a id="sidebarToggleTop" class="btn text-center">
+                <i class="fas fa-fw fa-align-justify"></i>
+            </a>
+
+            <div class="d-none d-sm-block">
+                <div class="dropdown d-inline-block">
+                    <img src="/static/images/logo-rancak-white.png" alt="" width="200px">
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="navbar-nav ml-auto">
+                <!-- Nav Item - Alerts -->
+                <li class="nav-item dropdown no-arrow mx-1">
+                    <div class="dropdown">
+                        <a class="nav-link" href="" target="_blank">
+                            <div class="mb-0 text-white"><i class="fa fa-fw fa-desktop"></i> View Website</div>
+                        </a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown no-arrow">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="text-white">@user_nama</span>
+                        <img class="img-profile rounded-circle ml-2" src="/static/images/profile/default.jpg" height="60px;">
+                        <i class="fa fa-fw fa-chevron-down fa-sm small"></i>
+                        <!--   <i class="fa fa-fw fa-chevron-right fa-sm icon-user"></i> -->
+                    </a>
+                    <!-- Dropdown - User Information -->
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="">
+                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Pengaturan Akun
+                        </a>
+                        <!-- <a class="dropdown-item" href="#">
+                            <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                        </a> -->
+                        <a class="dropdown-item" href="">
+                            <i class="fas fa-phone fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Bantuan
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="">
+                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Keluar
+                        </a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+<!-- Begin Page Content -->
+<div class="container-fluid">
+    <div class="row pt-0">
+        <div class="col-12 header-bar">
+            <div class="judul-halaman-content">Pasangan Bupati</div>
+            <div class="keterangan-halaman-content pt-1">Halaman Tentang list Nama Pasangan Calon Bupati</div>
+        </div>
+    </div>
+
+
+    <div class="row pt-1">
+        <div class="col-12">
+            <div class="card p-3 shadow-sign border-0 mt-3">
+              <div class="row pt-2 justify-content-center">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-heder p-2">
+                        <h3 class="p-2 mb-0">No urut 1</h3>
+                      </div>
+                      <img src="https://rancak.nozyra.xyz/assets/images/paslonbupati/eb3416f248b98c8688320701ab78a72a.jpg" class="card-img-top" alt="...">
+                     
+                        <!-- <div class="float-icon" id="<?= $row['id']; ?>">
+                          <a class="btn btn-danger text-white" data-toggle="tooltip" data-placement="top" title="Hapus" href="<?= base_url('pasanganbupati/hapus/') . $row['id']; ?>" onclick="return confirm('yakin ingin menghapus data?')"><i class="fa fa-fw  fa-trash"></i></a>
+                          <a href="edit/<?= $row['id']; ?>" class="btn btn-warning text-white" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-fw fa-edit"></i></a>
+                        </div>
+                     -->
+      
+                      <div class="card-body text-center mt-0 py-0">
+                        <h4 class="card-title">KHAIRUNAS -
+                            YULIAN EFI</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-heder p-2">
+                        <h3 class="p-2 mb-0">No urut 1</h3>
+                      </div>
+                      <img src="https://rancak.nozyra.xyz/assets/images/paslonbupati/0ca91873c82e1769c4155317d9512e94.jpg" class="card-img-top" alt="...">
+                     
+                        <!-- <div class="float-icon" id="<?= $row['id']; ?>">
+                          <a class="btn btn-danger text-white" data-toggle="tooltip" data-placement="top" title="Hapus" href="<?= base_url('pasanganbupati/hapus/') . $row['id']; ?>" onclick="return confirm('yakin ingin menghapus data?')"><i class="fa fa-fw  fa-trash"></i></a>
+                          <a href="edit/<?= $row['id']; ?>" class="btn btn-warning text-white" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-fw fa-edit"></i></a>
+                        </div>
+                     -->
+      
+                      <div class="card-body text-center mt-0 py-0">
+                        <h4 class="card-title">ABDUL RAHMAN -
+                            ROSMAN EFFENDI</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-heder p-2">
+                        <h3 class="p-2 mb-0">No urut 1</h3>
+                      </div>
+                      <img src="https://rancak.nozyra.xyz/assets/images/paslonbupati/5c10ded8c3632be7630ae6f45f868138.jpg" class="card-img-top" alt="...">
+                     
+                        <!-- <div class="float-icon" id="<?= $row['id']; ?>">
+                          <a class="btn btn-danger text-white" data-toggle="tooltip" data-placement="top" title="Hapus" href="<?= base_url('pasanganbupati/hapus/') . $row['id']; ?>" onclick="return confirm('yakin ingin menghapus data?')"><i class="fa fa-fw  fa-trash"></i></a>
+                          <a href="edit/<?= $row['id']; ?>" class="btn btn-warning text-white" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-fw fa-edit"></i></a>
+                        </div>
+                     -->
+      
+                      <div class="card-body text-center mt-0 py-0">
+                        <h4 class="card-title">ERWIN ALI -
+                            MARWAN EFENDI</h4>
+                      </div>
+                    </div>
+                  </div>
+      
+              </div>
+            </div>
+          </div>
+    </div>
+
+</div>
+
+</div>
+<!-- End of Main Content -->
+
+<!-- Footer -->
+<footer class="sticky-footer bg-white mt-4">
+    <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+            <span> © 2020 <a href="https://nozyra.com" target="_blank" class=""><u>PT. NOZYRA Global Solusindo.</u></a> All rights reserved.</span>
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
+
+</div>
+<!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+
+<!-- Bootstrap core JavaScript-->
+<script src="/static/javascript/jquery.min.js"></script>
+<script src="/static/javascript/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- script untuk grafik -->
+<!-- <script src="../javascript/chart.bundle.js"></script> -->
+
+<!-- Custom scripts for all pages-->
+<script type="text/javascript" src="../assets/javascript/myscript.js"></script>
+<!-- Page level custom scripts -->
+
+</body>
+
+</html>
+
+{{end}}

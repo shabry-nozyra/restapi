@@ -1,0 +1,171 @@
+html,
+body,
+.container#masuk {
+	height: 100%;
+}
+
+.menu-bar {
+	border-top: 1px solid red;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: max-content;
+	padding: 8px;
+	margin-top: 8px;
+	z-index: 2;
+	background-color: white;
+}
+
+.persen {
+	margin-top: -35px;
+	font-size: 21px;
+}
+
+.infoangka {
+	border-top: 2px solid white;
+	color: white;
+	font-weight: bold;
+}
+
+.kotak {
+	background-color: rgba(241, 101, 101, 0.426);
+	border-radius: 10px;
+	padding: 10%;
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	color: red;
+}
+
+
+.menubar.active {
+	color: red;
+}
+
+/* layar hp */
+@media (max-width: 575.98px) {
+	.keterangan-depan {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 10%;
+		height: max-content;
+		margin-bottom: 0px;
+	}
+
+	.judul-konten {
+		font-size: 19px;
+	}
+
+	.kotak h5 {
+		font-size: 32px;
+	}
+
+	.kotak p {
+		font-size: 18px;
+	}
+
+	.keterangan-depan a {
+		font-size: 16px;
+	}
+
+	a.menubar {
+		font-size: 16px;
+	}
+
+}
+
+/* layar hp landscape*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.keterangan-depan {
+		margin-bottom: 40px;
+	}
+
+	.judul-konten {
+		font-size: 28px;
+	}
+
+	.kotak h5 {
+		font-size: 32px;
+	}
+
+	.kotak p {
+		font-size: 18px;
+	}
+
+	.keterangan-depan a {
+		font-size: 16px;
+	}
+
+	a.menubar {
+		font-size: 16px;
+	}
+}
+
+/* layar ipad 7 inc*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.keterangan-depan {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 10%;
+		height: max-content;
+		margin-bottom: 0px;
+	}
+
+	.judul-konten {
+		font-size: 32px;
+	}
+
+	.kotak h5 {
+		font-size: 48px;
+	}
+
+	.kotak p {
+		font-size: 32px;
+	}
+
+	.keterangan-depan a {
+		font-size: 28px;
+	}
+
+	a.menubar {
+		font-size: 28px;
+	}
+
+}
+
+/* layar ipad 10 inc lebih*/
+@media (min-width: 992px) {
+	.keterangan-depan {
+		margin-bottom: 40px;
+	}
+
+	.judul-konten {
+		font-size: 32px;
+	}
+
+	.kotak h5 {
+		font-size: 48px;
+	}
+
+	.kotak p {
+		font-size: 38px;
+	}
+
+	.keterangan-depan a {
+		font-size: 28px;
+	}
+
+	a.menubar {
+		font-size: 28px;
+	}
+
+
+}
